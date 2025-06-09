@@ -1,0 +1,104 @@
+/* Немного базовых стилей */
+
+h2 {
+  text-align: center;
+  font-size: 250%;
+  font-weight: bold;
+  margin-bottom: 0.85em;
+  margin-top: 0.45em;
+}
+
+.figures-text-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 13px;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    font-size: 11px;
+  }
+}
+
+
+/* Неоновые стили */
+:root {
+  --neon-blue: #49ffc2;
+  --neon-pink: #00e7ff;
+  --neon-purple: #7a5fff; /* Мягкий фиолетовый */
+  --neon-yellow: #ff0;
+  --dark-bg: #0a0a12; /* Тёмно-синий вместо чёрного */
+  --card-bg: rgba(20, 20, 35, 0.85); /* Полупрозрачный тёмный с фиолетовым подтоном */
+}
+body {
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  background: 
+    radial-gradient(
+      ellipse at 20% 20%,
+      rgba(45, 30, 60, 0.3) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 80% 80%,
+      rgba(60, 30, 70, 0.3) 0%,
+      transparent 50%
+    ),
+    linear-gradient(
+      135deg,
+      #0a0a12 0%,
+      #12101a 50%,
+      #0a0812 100%
+    );
+  background-size: 200% 200%;
+  animation: mist-movement 150s ease infinite;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+@keyframes mist-movement {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(90, 50, 120, 0.05) 0%,
+      transparent 70%
+    );
+  pointer-events: none;
+  z-index: -1;
+  animation: pulse-mist 30s alternate infinite;
+}
+
+@keyframes pulse-mist {
+  0% { opacity: 0.3; transform: scale(0.95); }
+  100% { opacity: 0.7; transform: scale(1.05); }
+}
+
+
+.message{
+  padding: 1em;
+  text-align: center;
+}
+
+.works {
+  background-color: #00bc7d;
+  font-size: 150%;
+}
+

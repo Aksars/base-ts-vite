@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "react",
+    "allowJs": true,
+    "sourceMap": false,
+    "inlineSources": false,
+    "types": [
+      "node"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false
+  },
+  "exclude": ["dist", "node_modules"] 
+}

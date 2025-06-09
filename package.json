@@ -1,0 +1,16 @@
+{
+  "name": "base_typescript_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "dev": "vite dev",    
+    "preview": "vite preview",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "dependencies": {   
+    "typescript": "5.8.2",
+    "vite": "^6.2.3"
+  }
+}
