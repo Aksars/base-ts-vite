@@ -12,16 +12,39 @@
 
   <!-- Контейнер для приложения -->
   <div id="app">
+    <div class="container">
+      <div id="shawarma-container">
+        <h2>Шаурма (паттерн Builder)</h2>
+        <div id="shawarma-content"></div>
+      </div>
 
-    <!-- Можно стереть когда запустите приложение -->
-    <h2>Мой проект на тайп скрипт</h2>
-    <h2>Открыть терминал</h2>
-    <h2>Установить все командой npm install</h2>
-    <h2>Запустить командой npm run dev</h2>
-    <h2>Тыкнуть на первую ссылку</h2>   
-    <div class="message">Приложение сейчас не работает</div>
-    <!-- Можно стереть когда запустите приложение -->  
+      <div id="weapon-container">
+        <h2>Зачарованное оружие <br> (паттерн Decorator)</h2>
+        <div id="weapon-content">
+          <div class="weapon-card">
+            <h3 id="weapon-description">Стальной меч</h3>
+            <div class="damage">Урон: <span id="weapon-damage">15</span></div>
+            <div id="weapon-statuses"></div>
+            <div class="effects">Эффекты:</div>
+            <div class="effects-list" id="effects-list">
+              <!-- Иконки эффектов будут добавляться сюда -->
+            </div>
+          </div>
+        </div>
 
+        <div class="effect-controls">
+          <button class="effect-btn poision">Добавить Яд</button>
+          <button class="effect-btn fire">Добавить Огонь</button>
+          <button class="effect-btn lightning">Добавить Молнию</button>
+          <button class="effect-btn delete-last">Убрать последний</button>
+          <button class="reset-btn">Сбросить эффекты</button>
+        </div>
+      </div>
+
+
+      
+
+    </div>
   </div>
 
   <script type="module" src="src/ts/main.ts"></script>
